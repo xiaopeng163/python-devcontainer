@@ -13,7 +13,7 @@ RUN apk --no-cache update && apk --no-cache upgrade && \
 # Install pip requirements
 RUN pip install --no-cache-dir --upgrade pip
 
-# change default shell from ash to zsh
+# change default shell from bash to zsh
 RUN sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd
 
 # Create the user
