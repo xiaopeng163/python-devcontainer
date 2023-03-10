@@ -29,5 +29,5 @@
         }
     },
     "remoteUser": "devcontainer",
-    "postCreateCommand": "bash -i -c 'pre-commit install'"
+    "postCreateCommand": "bash -i -c 'pre-commit install && pip install -r requirements.txt'"
 }
