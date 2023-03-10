@@ -7,7 +7,17 @@
                 "editor.tabSize": 2,
                 "files.trimTrailingWhitespace": true,
                 "workbench.colorTheme": "Aura Dark",
-                "workbench.iconTheme": "material-icon-theme"
+                "workbench.iconTheme": "material-icon-theme",
+                "files.exclude": {
+                    ".env": true,
+                    ".git": true,
+                    ".pytest**": true,
+                    ".vscode": true,
+                    "**/__pycache__": true,
+                    "**/.git": false,
+                    "**/.vagrant": true,
+                    "venv": true
+                }
             },
             "extensions": [
                 "ms-python.python",
