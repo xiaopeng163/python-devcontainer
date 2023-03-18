@@ -31,3 +31,5 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master
 RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 COPY config/zshrc /home/$USERNAME/.zshrc
+
+COPY config/gitconfig /home/$USERNAME/.gitconfig

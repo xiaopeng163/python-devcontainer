@@ -106,3 +106,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$PATH:/home/devcontainer/.local/bin/
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
