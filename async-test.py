@@ -1,9 +1,10 @@
 import asyncio
+from typing import AsyncGenerator
 
 api_tree = {"A": ["B", "C"], "B": ["D", "E"], "C": ["F"]}
 
 
-async def get_nodes(tree, root):
+async def get_nodes(tree, root) -> list:
     # to simulate a slow API to get nodes
     await asyncio.sleep(1)
     if root not in tree:
@@ -11,7 +12,7 @@ async def get_nodes(tree, root):
     return tree[root]
 
 
-async def bfs(tree, root):
+async def bfs(tree, root) -> AsyncGenerator:
     nodes = await get_nodes(tree, root)
     for node in nodes:
         yield node
